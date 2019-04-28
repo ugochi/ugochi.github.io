@@ -11,21 +11,88 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Ugochi Akaluso | Data Visualization</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type= "text/css" href= "index.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
+  
 <body>
-  <h1>Ugochi</h1>
-  <img src= "https://scontent.fhou2-1.fna.fbcdn.net/v/t1.0-1/p320x320/26056078_10154934689140047_419012716716131097_n.jpg?_nc_cat=102&_nc_ht=scontent.fhou2-1.fna&oh=d872fadb32a0c2924f943af9d38cd2c7&oe=5D3A3690"
-  alt= "Ugochi" width = "300" height = "300">
-  <p> Some interesting things about who am I</p>
-  <p>Some of the work I've done</p>
-  <ul>
-    <li>Email</li>
-    <li>LinkedIn</li>
-    <li>Github</li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Max Temperature</a>
+            <a class="dropdown-item" href="#">Humidity</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <a class="dropdown-item" href="#">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Creates the Overall Grid -->
+  <div class="container-fluid">
+      <div class= "row">
+          <div class=" col-md-6 pad top bg-light"> <br>
+            <h3 class="h2" >Summary: Latitude vs. X</h3> <br>
+            <hr>
+                <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature"  class= "float-left rounded mx-auto d-block img-auto" width="350" height=auto>
+                
+                <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                  To accomplsh this analysis we first pulled data from the OpenWeatherMap API after generating a random 
+                  list of latitudes and longitudes using python. The Dataset after assembly contains over 500 cities. </p> <br>
+                <p> After assembling the dataset, we used matplotlib to plot various aspects of the weather vs latitude. 
+                  Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This section of the site 
+                  provides the source data and visualizations created as part of the analysis, as well as explanations 
+                  and descriptions of any trends and correlations witnessed. </p>
+
+          </div>
+          <div class="col-md-6 pad top bg-light"> <br>
+            <h3 class="h2">Visualizations</h3> <br>
+            <hr>
+            <p>Click on the graphs below to view in depth analysis</p>
+            
+            <div class="row">
+              <div class="col-md-6 pad top"> <br>
+                <a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" width="275" height=auto></a>
+              </div>
+              <div class="col-md-6 pad top"> <br>
+                <a href="humidity.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Humidity" width="275" height=auto></a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 pad top"> <br>
+                <a href="cloudiness.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Cloudiness" width="275" height=auto></a>
+              </div>
+              <div>
+                <a href="windspeed..html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Wind Speed" width="275" height=auto></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
 
 </body>
 
