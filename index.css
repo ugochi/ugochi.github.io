@@ -31,12 +31,27 @@ img {
     background-color:#2eb8b8;
     font-family: times new roman;
     font-weight: bold;
-    color: ffffff;
+    color: #ffff;
     padding: 20px;
 }
  
 .background{
     padding: 60px;
+}
+
+.footer{
+    background-color: #737373;
+    text-align: center;
+}
+
+.teal{
+    background-color:#2eb8b8;
+    padding: 5px;
+}
+.footer-text{
+    color: #ffff;
+    display: center;
+    font-size: 10px;
 }
 /* Here we define a navbar style that will ONLY be applied at screen sizes below 480 pixels */
 @media (max-width: 480px) {
