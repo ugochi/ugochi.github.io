@@ -4,9 +4,11 @@ body{
 }
 h3 {
      color:#2eb8b8;
-     font-family: sans-serif;
+     font-family: 'Times New Roman', Times, serif;
      font-weight: bold;
+     font-size: 30px;
 }
+
 
 img {
     padding-top: 10px;
@@ -67,6 +69,14 @@ img-small{
     color: #ffff;
     display: center;
     font-size: 10px;
+}
+
+.comparison-text{
+    color:#2eb8b8;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 /* Here we define a navbar style that will ONLY be applied at screen sizes below 480 pixels */
 @media (max-width: 480px) {
