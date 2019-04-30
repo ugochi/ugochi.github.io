@@ -10,18 +10,19 @@ h3 {
 }
 
 
-img {
+img-main {
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
-}
+} 
+
 
 img-small{
-    padding-top: 10px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    padding-left: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 
 .container-fluid{
@@ -51,15 +52,38 @@ img-small{
     background-color: #ffff;
 }
 
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
+
+  }
+
 .footer{
     background-color: #737373;
-    text-align: center;
+    text-align: center; 
+    border-top-style: solid; 
+    border-top-width: 5px; 
+    border-top-color: #0BADA6;
+    color: white; 
+    min-height: 55px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px; 
+    }
 }
 
 .teal{
     background-color:#2eb8b8;
     padding: 5px;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .grey{
@@ -79,14 +103,18 @@ img-small{
     text-align: center;
 }
 /* Here we define a navbar style that will ONLY be applied at screen sizes below 480 pixels */
-@media (max-width: 480px) {
-  .navbar {
-    background-color: rgb(12, 173, 167);
-}
-
-  .navbar-brand {
-                 background-color: white;
-                 font-family: times new roman;
-                 font-weight: bold;
-                 color: rgb(12, 173, 167);
-}
+@media(max-width: 990px){
+    .navbar-expand-lg{
+    background-color: #0BADA6 !important;
+    }
+    .navbar{
+        max-height: none; 
+        padding: inherit;
+    }
+    .navbar div{
+        margin: inherit; 
+        background-color: white;  
+    }
+    .navbar-brand{
+        padding: 10px !important; 
+    }

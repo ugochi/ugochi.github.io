@@ -13,72 +13,73 @@
 
   
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <a class="navbar-brand" href="index.html">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparisons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Creates the Overall Grid -->
-  <div class="container-fluid">
-      <div class= "row">
-          <div class="col-md-8 pad top white-background"> <br>
-            <h3>Cloudiness vs. Latitude</h3>
-            <hr>
-                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness vs. Latitude"  class= "rounded mx-auto d-block img-auto" width="650" height=auto>
-          </div> 
-          <div class= "col-md-1"></div>
-          <div class="col-md-3 pad top white-background"><br>
-            <h3>Visualizations</h3>
-            <hr>
-            <div class="row">
-              <div class="col-md-6 pad top white-background"> <br>
-                <a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" class="img-small" alt="Latitude vs. Max Temperature" width="150" height="140"></a>
-              </div>
-              <div class="col-md-6 pad top white-background"> <br>
-                <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-small" alt="Latitude vs. Humidity" width="150" height="140"></a>
-              </div>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <a class="navbar-brand" style="color:#fff" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
             </div>
-            <div class="row">
-              <div class="col-md-6 pad top white-background">
-                <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" width="150" height="150"></a>
-              </div>
-              <div class="col-md-6 pad top white-background">
-                <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" width="150" height="150"></a>
-              </div>
-             </div>
-          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
       </div>
-              <div class= "row">
-                <div class="col-md-8 pad top white-background"> <br>
-                    <p> As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
-                        More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. 
-                        This may be due to the tilt of the earth at the time of the year the data was gathered. </p> <br>
-          
+    </nav>
+  
+    <!-- Creates the Overall Grid -->
+    <div class="container-fluid">
+        <div class= "row">
+            <div class="col-md-8 pad top white-background"> <br>
+              <h3>Cloudiness vs. Latitude</h3>
+              <hr>
+                  <img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Max Temperature"  class= "rounded mx-auto d-block img-auto" width="65%" height=auto><br><br>
+                  <p> As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+                    More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. 
+                    This may be due to the tilt of the earth at the time of the year the data was gathered. </p> <br>
+            </div> 
+            <div class= "col-md-1"></div>
+            <div class="col-md-3 pad top white-background"><br>
+              <h3>Visualizations</h3>
+              <hr>
+              <div class="row">
+                <div class="col-md-6 pad top white-background"> <br>
+                  <a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" class="img-small" alt="Latitude vs. Max Temperature" width=100% height=100%></a>
                 </div>
+                <div class="col-md-6 pad top white-background"> <br>
+                  <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-small" alt="Latitude vs. Humidity" width=100% height=100%></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 pad top white-background">
+                  <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" width=100% height=100%></a>
+                </div>
+                <div class="col-md-6 pad top white-background">
+                  <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" width=100% height=100%></a>
+                </div>
+               </div>
             </div>
+        </div>
+                <div class= "row">
+                  <div class="col-md-8 pad top white-background"> <br>
+                    <br><br>
+                  </div>
+              </div>
         
   <div class="teal"></div>
   
